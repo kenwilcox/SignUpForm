@@ -38,8 +38,7 @@
         <LinearLayout
             android:id="@+id/password_field"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/username_field">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/password_label"
@@ -60,8 +59,7 @@
         <LinearLayout
             android:id="@+id/confirm_field"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/password_field">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/confirm_label"
