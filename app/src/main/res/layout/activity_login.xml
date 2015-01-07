@@ -10,9 +10,9 @@
 
     <LinearLayout
         android:id="@+id/fields"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/username_field"
@@ -52,7 +52,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="75"
-                android:hint="@string/password_input_hint" />
+                android:hint="@string/password_input_hint"
+                android:inputType="textPassword"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -73,7 +75,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="75"
-                android:hint="@string/confirm_input_hint" />
+                android:hint="@string/confirm_input_hint"
+                android:inputType="textPassword"
+                android:textSize="16sp" />
 
         </LinearLayout>
     </LinearLayout>
