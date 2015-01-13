@@ -2,6 +2,7 @@ package com.k3nx.signupform;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.EditText;
 
 
 public class LoginActivity extends ActionBarActivity {
+
+    private static final String TAG = "LoginActivity";
 
     private Button mSubmitButton;
     private EditText mUsernameInput;
@@ -29,7 +32,12 @@ public class LoginActivity extends ActionBarActivity {
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String username = mUsernameInput.getText().toString();
+                String password = mPasswordInput.getText().toString();
+                String confirmation = mConfirmInput.getText().toString();
+                if(password.equals(confirmation)) {
+                    Log.d(TAG, String.format("Password Success for %1$s!!!", username));
+                }
             }
         });
     }
