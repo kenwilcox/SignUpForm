@@ -35,7 +35,7 @@ public class LoginActivity extends ActionBarActivity {
                 String username = mUsernameInput.getText().toString();
                 String password = mPasswordInput.getText().toString();
                 String confirmation = mConfirmInput.getText().toString();
-                if(password.equals(confirmation)) {
+                if (password.equals(confirmation)) {
                     Log.d(TAG, String.format("Password Success for %1$s!!!", username));
                 }
             }
