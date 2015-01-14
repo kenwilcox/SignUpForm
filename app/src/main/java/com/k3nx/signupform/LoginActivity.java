@@ -15,7 +15,7 @@ public class LoginActivity extends ActionBarActivity {
 
     private static final String TAG = "LoginActivity";
 
-    private Button mSubmitButton;
+    //private Button mSubmitButton;
     private EditText mUsernameInput;
     private EditText mPasswordInput;
     private EditText mConfirmInput;
@@ -25,7 +25,7 @@ public class LoginActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mSubmitButton = (Button)findViewById(R.id.submit_button);
+        Button mSubmitButton = (Button)findViewById(R.id.submit_button);
         mUsernameInput = (EditText)findViewById(R.id.username_input);
         mPasswordInput = (EditText)findViewById(R.id.password_input);
         mConfirmInput = (EditText)findViewById(R.id.confirm_input);
