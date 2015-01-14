@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">SignUpForm</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Hello world (Home)!</string>
     <string name="action_settings">Settings</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
@@ -13,6 +13,6 @@
     <string name="confirm_label">Confirm:</string>
     <string name="confirm_input_hint">Please confirm password</string>
     <string name="submit">Submit</string>
-
+    <string name="title_activity_home">HomeActivity</string>
 
 </resources>
