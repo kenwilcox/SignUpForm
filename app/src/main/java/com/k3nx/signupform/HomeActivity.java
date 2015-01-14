@@ -10,13 +10,14 @@ import android.view.MenuItem;
 public class HomeActivity extends ActionBarActivity {
 
     private static final String TAG = "HomeActivity";
+    public static final String EXTRA = "INFO";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        String info = getIntent().getStringExtra("INFO");
+        String info = getIntent().getStringExtra(EXTRA);
         Log.d(TAG, info);
     }
 
