@@ -2,16 +2,22 @@ package com.k3nx.signupform;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
 public class HomeActivity extends ActionBarActivity {
 
+    private static final String TAG = "HomeActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        String info = getIntent().getStringExtra("INFO");
+        Log.d(TAG, info);
     }
 
 

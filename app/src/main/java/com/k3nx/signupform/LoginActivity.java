@@ -41,6 +41,7 @@ public class LoginActivity extends ActionBarActivity {
                     User newUser = new User(username, password);
 
                     Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                    i.putExtra("INFO", "Hello Android");
                     startActivity(i);
                 }
             }
