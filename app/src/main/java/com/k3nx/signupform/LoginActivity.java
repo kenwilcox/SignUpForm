@@ -1,5 +1,6 @@
 package com.k3nx.signupform;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -38,6 +39,9 @@ public class LoginActivity extends ActionBarActivity {
                 if (password.equals(confirmation)) {
                     Log.d(TAG, String.format("Password Success for %1$s!!!", username));
                     User newUser = new User(username, password);
+
+                    Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                    startActivity(i);
                 }
             }
         });
