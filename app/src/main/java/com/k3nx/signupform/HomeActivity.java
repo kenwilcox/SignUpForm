@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class HomeActivity extends ActionBarActivity {
@@ -19,6 +20,9 @@ public class HomeActivity extends ActionBarActivity {
 
         User user = (User)getIntent().getSerializableExtra(EXTRA);
         Log.d(TAG, String.format("Username is %1$s", user.getUsername()));
+        String welcome = String.format(getResources().getString(R.string.welcome_format), user.getUsername());
+        TextView welcomeText = (TextView)findViewById(R.id.welcome_text);
+        welcomeText.setText(welcome);
     }
 
 
